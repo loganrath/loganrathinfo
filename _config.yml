@@ -1,0 +1,9 @@
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+gems:
+  - jekyll-redirect-from

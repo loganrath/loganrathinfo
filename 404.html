@@ -1,0 +1,17 @@
+<html lang="en">
+<head></head>
+<body>
+<div style="margin-top: 7em; font-family: Verdana, sans-serif; text-align: center;">
+  <p style="font-size: 24px;">This site has changed addresses to <a href="https://rath.phd">https://rath.phd</a>.</p>
+  <p style="font-size: 16px;">You will be redirected momentarily to <a id="link" href="">https://rath.phd<span id="pathname"></span></a></p>
+</body>
+</html>
+<script>
+  var pathname = window.location.pathname;
+  document.getElementById("pathname").innerHTML = pathname;
+  var newURL = "https://rath.phd" + pathname;
+  document.getElementById("link").href = newURL;
+  setTimeout(function(){
+            window.location.href = newURL;
+         }, 3000);
+</script>
